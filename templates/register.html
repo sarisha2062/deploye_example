@@ -1,0 +1,15 @@
+{%extends "layout.html"%}
+{% block content%}
+{% if error%}
+<p style="color: red">{{error}}</p>
+{%endif%}
+
+
+<form method="post">
+    <input type="text" name="txtfullname" placeholder="enter full name "></br>
+    <input type="email" name="txtEmail" placeholder="enter email"></br>
+    <input type="password" name="txtPassword" placeholder="enter password"></br>
+    <input type="password" name="RetypePassword" placeholder="retype password"></br>
+    <input type="submit" value="register">
+</form>
+{% endblock %}
